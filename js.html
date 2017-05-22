@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>what can JavaScript do?</h2>
+  <p id="demo">JavaScript can change HTML content.</p>
+  <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">Click Me!</button>
+<p id='hai'>JavaScript can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('hai').style.color='green'">Click me!</button>
+<p id='hey'>JavaScript can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('hey').style.display='none'">Click me!</button>
+<p id='abc' style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('abc').style.display='block'">Click me!</button>
+<center>
+<p id="eee"></p>
+<script>
+document.getElementById("eee").innerHTML="My First JavaScript";
+</script>
+</center>
+<script>
+function myFunction(){
+  document.getElementById("aa").innerHTML="paragraph changed.";
+}
+</script>
+<p id="aa">a paragraph</p>
+<button type="button" onclick="myFunction()">try it</button>
+<h2>external javascript</h2>
+<p id="ab">a paragraph</p>
+<button type="button" onclick="myFunction()">try it</button>
+<p>(my function is stored in an external file called"ex.js")</p>
+<script src="ex.js"></script>
+<p id="cd"></p>
+<script>
+document.getElementById("cd").innerHTML=5+6;
+</script>
+<p id="ef"></p>
+<script>
+document.getElementById("ef").innerHTML="5+6";
+</script>
+<p id="hj"></p>
+<script>
+document.getElementById("hj").innerHTML="5"+"6";
+document.write(5+6);
+console.log(5+6);
+</script>
+<button onclick="document.write(5+6)">try it</button>
+
+<p id="qqq"></p>
+<script>
+var x,y,z;
+x=5;
+y=6;
+z=x+y;
+document.getElementById("qqq").innerHTML=z;
+</script>
+<p id="po"></p>
+<script>
+txt1="shahama";
+txt1+="shajeeth";
+document.getElementById("po").innerHTML=txt1;
+</script>
+<p id="pp"></p>
+<script>
+var x=10;
+x +=5;
+document.getElementById("pp").innerHTML=x;
+</script>
+<p id="ss"></p>
+<script>
+var carname1="volvo XC60";
+var carname2="volvo XC60";
+var answer1="It's alright";
+var answer2='He is called "johni"';
+var answer3='He is called "johny"';
+
+document.getElementById("ss").innerHTML=
+carname1 + "<br>"+
+carname2 + "<br>"+
+answer1 + "<br>"+
+answer2 + "<br>"+
+answer3;
+</script>
+
+<p id="bb"></p>
+<script>
+var cars=["sabb","volvo","BMW"];
+document.getElementById("bb").innerHTML=
+cars[0]+"<br>"+
+cars[1]+"<br>"+
+cars[2];
+</script>
+
+<p id="dd"></p>
+<script>
+var person={
+  firstname:"shahama",
+  lastname:"shajeeth",
+  age:19,
+  eyecolour:"brown"
+};
+document.getElementById("dd").innerHTML=
+person.firstname + " is " + person.age + " years old.";
+
+document.getElementById("dd").innerHTML=
+person.firstname + "'s eyecolour is " + person.eyecolour+".";
+</script>
+
+<p id="rr"></p>
+<script>
+document.getElementById("rr").innerHTML=
+typeof 0 +"<br>" +
+typeof 314 +"<br>" +
+typeof 3.14 +"<br>" +
+typeof (3) +"<br>" +
+typeof (3+4) +"<br>"+
+typeof "john"+ "<br>"+
+typeof [1,2,3,4]+"<br>"+
+typeof true + "<br>"+
+typeof false +"<br>"+
+typeof {name:'john', age:34}+"<br>"+
+typeof function myfunc(){};
+</script>
+
+<p id="kk"></p>
+<script>
+function myfunct(p1,p2){
+  return p1*p2;
+}
+document.getElementById("kk").innerHTML=
+myfunct(4,3);
+</script>
+
+<p id="oo"></p>
+<script>
+function myfun(p1,p2){
+  return (p1+p2)/2;
+}
+document.getElementById("oo").innerHTML=
+myfun(4,3);
+</script>
+
+<p id="yy"></p>
+<script>
+function myf(a){
+  return (a-32)*5/9
+}
+document.getElementById("yy").innerHTML=
+myf(75);
+</script>
+
+<p id="iou"></p>
+<script>
+var hey={
+  Firstname:"john",
+  Lastname:"doe",
+  id:5566
+};
+document.getElementById("iou").innerHTML=
+hey["Firstname"]+" "+ hey["Lastname"];
+</script>
+
+<p id="demo29"></p>
+<script>
+var person={
+  firstname:"abi",
+  lastname:"karish",
+  age:27,
+  city:"jaffna",
+  firstname1:"raji",
+  lastname1:"kavin",
+  age1:26,
+  city1:"nallur"
+};
+document.getElementById("demo29").innerHTML=
+"Name:-" +person["firstname"]+" "+person["lastname"]+"<br>"+
+"Age:-"+person["age"]+"<br>"+
+"City:-"+person["city"]+"<br>"+"<br>"+
+"Name:-" +person["firstname1"]+" "+person["lastname1"]+"<br>"+
+"Age:-"+person["age1"]+"<br>"+
+"City:-"+person["city1"];
+</script>
+
+
+  </body>
+  </html>

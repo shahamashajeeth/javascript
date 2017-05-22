@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+  Number: <input type="number" id="myNumber" value="0">
+
+
+
+  <button type="button" onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+
+<script>
+    var x = document.getElementById("myNumber");
+    var text="";
+    var i=0;
+    var a=1;
+    while(a<=10){
+      text+= "<br>The value is" + i;
+      i=i*3;
+      a++;
+    }
+    document.getElementById("demo1").innerHTML=text;
+    </script>
+
+</body>
+</html>

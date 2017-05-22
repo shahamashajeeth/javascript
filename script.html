@@ -1,0 +1,83 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var text = "";
+var i;
+for (i = 0;i < 5; i++){
+  text += "The number is " + i +"<br>";
+}
+document.getElementById("demo").innerHTML =text;
+</script>
+<br>
+
+<p id="demo1"></p>
+<script>
+var text = "";
+var i;
+for (i = 10;i > 0; i--){
+  text += "The number is " + i +"<br>";
+}
+document.getElementById("demo1").innerHTML =text;
+</script>
+
+<p id="bb"></p>
+<script>
+var fruits=["apple","orange","mango","pineapple"];
+var i;
+var text="";
+for (i=0;i<fruits.length;i++){
+  text += fruits[i] + "<br> ";}
+document.getElementById("bb").innerHTML=text;
+</script>
+
+<p id="ff"></p>
+<script>
+  var txt = "";
+  var person={fname:"john",lname:"doe",age:25};
+  var x;
+  for (x in person){
+    txt += person[x] + " ";
+  }
+  document.getElementById("ff").innerHTML=txt;
+  </script>
+
+
+
+<p id="2"></p>
+<script>
+var i;
+var grade=["A","B","C","D","E"];
+for (i=0, len = grade.length; i < len; i++){
+  switch(grade[i])
+{
+case'A': document.write("excellent<br />");
+break;
+case'B': document.write("very good<br />");
+break;
+case'C': document.write("Good<br />");
+break;
+case'D': document.write("not Good<br />");
+break;
+case'F': document.write("failed<br />");
+break;
+default: document.write("unknongrade<br />")
+}
+}
+</script>
+<br>
+
+<p id="demo50"></p>
+<script>
+var text="";
+var i;
+for (i=0;i<=10;i++){
+text += "hello world"+ "<br>";
+}
+  document.getElementById("demo50").innerHTML=text;
+</script>
+</html>
